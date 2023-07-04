@@ -80,6 +80,9 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+The Chit Chat app for mobile devices uses React Native. The app will
+provide users with a chat interface and options to share images and their
+location.
 
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `carbon-42`, `chat-app`, `twitter_handle`, `brad-richardson-6`, `email_client`, `email`, `CHIT CHAT`, `project_description` -->
 
@@ -147,9 +150,15 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [ ] Feature 1
+      A page where users can enter their name and choose a background color for the chat screen
+      before joining the chat.
 - [ ] Feature 2
+      A page displaying the conversation, as well as an input field and submit button.
 - [ ] Feature 3
-  - [ ] Nested Feature
+      The chat provides users with two additional communication features: sending images
+      and location data.
+- [ ] Feature 4
+      Data gets stored online and offline.
 
 See the [open issues](https://github.com/carbon-42/chat-app/issues) for a full list of proposed features (and known issues).
 
