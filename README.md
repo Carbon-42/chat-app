@@ -79,7 +79,8 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
+<img src='./assets/screenshot.png' maxheight='100'>
 The Chit Chat app for mobile devices uses React Native. The app will
 provide users with a chat interface and options to share images and their
 location.
