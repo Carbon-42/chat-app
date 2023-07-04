@@ -224,7 +224,7 @@ Project Link: [https://github.com/carbon-42/chat-app](https://github.com/carbon-
 [license-url]: https://github.com/carbon-42/chat-app/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/brad-richardson-6
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: assets/screenshot.png
 [React_Native.js]: https://img.shields.io/badge/React_Native.js-000000?style=for-the-badge&logo=React_Nativedotjs&logoColor=white
 [React_Native-url]: https://reactnative.dev/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
