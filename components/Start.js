@@ -1,5 +1,5 @@
 import { useState } from 'react'; 
-import { StyleSheet, View, Text, Button, TextInput, ImageBackground, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Text, TextInput, ImageBackground, TouchableOpacity, KeyboardAvoidingView, Platform, Keyboard, TouchableWithoutFeedback } from 'react-native';
 
 const Start = ({ navigation }) => {
   const [name, setName] = useState();
@@ -12,47 +12,50 @@ const Start = ({ navigation }) => {
     grey: { backgroundColor: '#dddddd' },
   };
 
-  const { mint, blue, salmon, grey } = bgColors;
+  const { blue, salmon, grey } = bgColors;
 
   return (
     <View style={styles.container}>
-      <ImageBackground 
-        source={require('../assets/background.png')}
-        resizeMode='cover'
-        style={styles.background}
+      <TouchableWithoutFeedback onPress={() => {Keyboard.dismiss()}}>
+        <ImageBackground 
+          source={require('../assets/background.png')}
+          resizeMode='cover'
+          style={styles.background}
         >
-        <Text style={styles.base_text}>WELCOME TO CHIT CHAT</Text>
-        <TextInput 
-        style={styles.textInput}
-        value={name}
-        onChangeText={setName}
-        placeholderTextColor='red'
-        placeholder='Type your username here'
-        />
-        <View style={{ alignItems: 'center'}}>
-          <Text style={styles.base_text}>CHOOSE A COLOR</Text>
-          <View style={styles.color_dots}>
-            <TouchableOpacity 
-              style={[styles.button, blue]} 
-              onPress={() => setColor('#3399ff')}
-            />
-            <TouchableOpacity 
-              style={[styles.button, salmon]} 
-              onPress={() => setColor('#fa8072')}
-            />
-            <TouchableOpacity 
-              style={[styles.button, grey]} 
-              onPress={() => setColor('#dddddd')}
-            />
+          <Text style={styles.base_text}>WELCOME TO CHIT CHAT</Text>
+          <TextInput 
+          style={styles.textInput}
+          value={name}
+          onChangeText={setName}
+          placeholderTextColor='red'
+          placeholder='Type your username here'
+          />
+          <View style={{ alignItems: 'center'}}>
+            <Text style={styles.base_text}>CHOOSE A COLOR</Text>
+            <View style={styles.color_dots}>
+              <TouchableOpacity 
+                style={[styles.button_color, blue]} 
+                onPress={() => setColor('#3399ff')}
+              />
+              <TouchableOpacity 
+                style={[styles.button_color, salmon]} 
+                onPress={() => setColor('#fa8072')}
+              />
+              <TouchableOpacity 
+                style={[styles.button_color, grey]} 
+                onPress={() => setColor('#dddddd')}
+              />
+            </View>
           </View>
-        </View>
-        <TouchableOpacity 
-          style={styles.start_button} 
-          onPress={() => navigation.navigate('Chat', {name: name, color: color})}
-        >
-          <Text>Start Chatting!</Text>
-        </TouchableOpacity>
-      </ImageBackground>
+          <TouchableOpacity 
+            style={styles.button_start} 
+            onPress={() => navigation.navigate('Chat', {name: name, color: color})}
+          >
+            <Text>Start Chatting!</Text>
+          </TouchableOpacity>
+        </ImageBackground>
+      </TouchableWithoutFeedback>
+      {Platform.OS === "ios"?<KeyboardAvoidingView behavior="padding" />: null}
     </View>
  );
 }
@@ -77,13 +80,13 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     marginTop: 15,
     marginBottom: 15,
-    opacity: 0.9
+    opacity: 0.9,
+    backgroundColor: 'white'
   },
-  button: {
+  button_color: {
     height: 40, 
     width: 40,
     borderRadius: 20,
-    // alignItems: 'center',
     backgroundColor: '#DDDDDD',
     padding: 10,
     margin: 10,
@@ -91,11 +94,12 @@ const styles = StyleSheet.create({
   color_dots: {
     flexDirection: 'row',
   },
-  start_button: {
+  button_start: {
     backgroundColor: 'white', 
     padding: 10,
     borderRadius: 5,
-    opacity: 0.8
+    opacity: 0.8,
+    marginBottom: 50
   }
 });
 
