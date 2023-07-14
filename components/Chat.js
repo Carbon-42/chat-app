@@ -35,7 +35,6 @@ const Chat = ({ route, navigation, db, isConnected }) => {
   //Load messages from cache
   const loadCachedMessages = async () => {
     const cachedMessages = await AsyncStorage.getItem('messages') || [];
-    // console.log(cachedMessages)
     setMessages(JSON.parse(cachedMessages));
   }
 
@@ -65,7 +64,6 @@ const Chat = ({ route, navigation, db, isConnected }) => {
         });
         setMessages(newMessages);
         cacheMessages(newMessages);
-        // loadCachedMessages();
       });
     } else loadCachedMessages();
 
