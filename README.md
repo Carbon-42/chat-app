@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Carbon-42/chat-app">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
 <h3 align="center">CHIT CHAT</h3>
@@ -93,10 +93,10 @@ location.
 ### Built With
 
 - [![React_Native][React_Native.js]][React_Native-url]
-<!-- - [![React][React.js]][React-url]
-- [![Vue][Vue.js]][Vue-url]
-- [![Angular][Angular.io]][Angular-url]
-- [![Svelte][Svelte.dev]][Svelte-url]
+- [![React][Expo]][Expo-url]
+- [![Vue][Firebase]][Firebase-url]
+- [![Angular][Gifted Chat]][Gifted Chat-url]
+<!-- - [![Svelte][Svelte.dev]][Svelte-url]
 - [![Laravel][Laravel.com]][Laravel-url]
 - [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 - [![JQuery][JQuery.com]][JQuery-url] -->
@@ -107,11 +107,9 @@ location.
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
 
 - Node.js LTS release
   ```sh
@@ -263,8 +261,8 @@ Project Link: [https://github.com/carbon-42/chat-app](https://github.com/carbon-
 - []()
 - []() -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p>
+ -->
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
@@ -284,11 +282,11 @@ Project Link: [https://github.com/carbon-42/chat-app](https://github.com/carbon-
 [React_Native.js]: https://img.shields.io/badge/React_Native.js-000000?style=for-the-badge&logo=React_Nativedotjs&logoColor=white
 [React_Native-url]: https://reactnative.dev/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
+[Expo-url]: https://docs.expo.dev/
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
+[Firebase-url]: https://firebase.google.com/
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
+[Gifted Chat-url]: https://github.com/FaridSafi/react-native-gifted-chat
 [Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
 [Svelte-url]: https://svelte.dev/
 [Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
