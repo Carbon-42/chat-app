@@ -93,9 +93,9 @@ location.
 ### Built With
 
 - [![React_Native][React_Native.js]][React_Native-url]
-- [![React][Expo]][Expo-url]
-- [![Vue][Firebase]][Firebase-url]
-- [![Angular][Gifted Chat]][Gifted Chat-url]
+- [Expo][Expo-url]
+- [Firebase][Firebase-url]
+- [Gifted Chat][Gifted Chat-url]
 <!-- - [![Svelte][Svelte.dev]][Svelte-url]
 - [![Laravel][Laravel.com]][Laravel-url]
 - [![Bootstrap][Bootstrap.com]][Bootstrap-url]
