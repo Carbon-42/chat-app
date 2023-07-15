@@ -105,7 +105,7 @@ location.
 
 <!-- GETTING STARTED -->
 
-<!-- ## Getting Started
+## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
@@ -121,21 +121,20 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/carbon-42/chat-app.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+3. Enter your API in `app.js`
    ```js
    const API_KEY = "ENTER YOUR API";
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 
@@ -147,20 +146,36 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
+<!-- ## User Stories -->
+
+## User Stories
+
+1. As a new user, I want to be able to easily enter a chat room so I can quickly start talking to my
+   friends and family.
+   <br>
+2. As a user, I want to be able to send messages to my friends and family members to exchange
+   the latest news.
+   <br>
+3. As a user, I want to send images to my friends to show them what I’m currently doing.
+   <br>
+4. As a user, I want to share my location with my friends to show them where I am.
+   <br>
+5. As a user, I want to be able to read my messages offline so I can reread conversations at any
+   time.
+   <br>
+6. As a user with a visual impairment, I want to use a chat app that is compatible with a screen
+   reader so that I can engage with a chat interface.
+
 <!-- ROADMAP -->
 
 ## Roadmap
 
-- [ ] Feature 1
-      A page where users can enter their name and choose a background color for the chat screen
+- [ ] Feature 1 >A page where users can enter their name and choose a background color for the chat screen
       before joining the chat.
-- [ ] Feature 2
-      A page displaying the conversation, as well as an input field and submit button.
-- [ ] Feature 3
-      The chat provides users with two additional communication features: sending images
+- [ ] Feature 2 >A page displaying the conversation, as well as an input field and submit button.
+- [ ] Feature 3 >The chat provides users with two additional communication features: sending images
       and location data.
-- [ ] Feature 4
-      Data gets stored online and offline.
+- [ ] Feature 4 >Data gets stored online and offline.
 
 See the [open issues](https://github.com/carbon-42/chat-app/issues) for a full list of proposed features (and known issues).
 
