@@ -144,16 +144,25 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-3. Install Expo CLI
-
-   ```sh
-   npm
-   ```
-
-4. Enter your API in `app.js`
+3. Enter your firebase API in `app.js`
    ```js
-   const API_KEY = "ENTER YOUR API";
+   const firebaseConfig = {"ENTER YOUR API"};
    ```
+4. Create a Firestore Database
+   ```
+   https://firebase.google.com/docs/database
+   ```
+5. Create a Firestore Cloud Storage
+   ```
+   https://firebase.google.com/docs/storage
+   ```
+6. Run the app
+
+```sh
+npm start
+```
+
+Test the app using Expo Go on your phone or run an emulator on your machine.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -174,15 +183,20 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 1. As a new user, I want to be able to easily enter a chat room so I can quickly start talking to my
    friends and family.
    <br>
+   <br>
 2. As a user, I want to be able to send messages to my friends and family members to exchange
    the latest news.
    <br>
+   <br>
 3. As a user, I want to send images to my friends to show them what I’m currently doing.
+   <br>
    <br>
 4. As a user, I want to share my location with my friends to show them where I am.
    <br>
+   <br>
 5. As a user, I want to be able to read my messages offline so I can reread conversations at any
    time.
+   <br>
    <br>
 6. As a user with a visual impairment, I want to use a chat app that is compatible with a screen
    reader so that I can engage with a chat interface.
@@ -191,12 +205,16 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-- [ ] Feature 1 >A page where users can enter their name and choose a background color for the chat screen
-      before joining the chat.
-- [ ] Feature 2 >A page displaying the conversation, as well as an input field and submit button.
-- [ ] Feature 3 >The chat provides users with two additional communication features: sending images
-      and location data.
-- [ ] Feature 4 >Data gets stored online and offline.
+- [ ] Feature 1
+  > A page where users can enter their name and choose a background color for the chat screen
+        before joining the chat.
+- [ ] Feature 2
+  > A page displaying the conversation, as well as an input field and submit button.
+- [ ] Feature 3
+  > The chat provides users with two additional communication features: sending images
+        and location data.
+- [ ] Feature 4
+  > Data gets stored online and offline.
 
 See the [open issues](https://github.com/carbon-42/chat-app/issues) for a full list of proposed features (and known issues).
 
